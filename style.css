@@ -1,0 +1,42 @@
+body{
+    background:red;
+    padding:0;
+    margin:0;
+}
+
+header, section, footer, main {
+    padding:40px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#banner{ 
+    display:flex;
+    justify-content: center;
+    background-color: bisque;
+}
+
+#banner div{
+    width:600px;
+    text-align:center;
+}
+
+@media screen and (max-width:800px){ 
+
+    body{
+        background:blue;
+    }
+
+    main{
+        grid-template-columns:1fr;
+    }
+
+} /*===========closing bracket for MQ============*/
